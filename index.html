@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;600;800&display=swap"
+      rel="stylesheet"
+    />
     <meta name="description" content="Rebecca Business Consultancy" />
     <meta name="author" content="Lukas Bujdos" />
     <title>Rebecca Business Consultancy</title>
@@ -11,16 +15,18 @@
   <body>
     <header class="header">
       <nav class="header__nav">
-        <img src="#" alt="Logo" />
-        <h3>Rebecca</h3>
-        <ul class="header__list">
-          <li class="header__list">Home</li>
-          <li class="header__list">Intro</li>
-          <li class="header__list">Services</li>
-          <li class="header__list">Call me</li>
-          <li class="header__list">Projects</li>
-          <li class="header__list">About</li>
-          <li class="header__list">Contact</li>
+        <div class="header__nav-logo">
+          <img src="#" alt="Logo" />
+          <h3>Rebecca</h3>
+        </div>
+        <ul class="header__nav-list">
+          <li class="header__nav-list-item">Home</li>
+          <li class="header__nav-list-item">Intro</li>
+          <li class="header__nav-list-item">Services</li>
+          <li class="header__nav-list-item">Call me</li>
+          <li class="header__nav-list-item">Projects</li>
+          <li class="header__nav-list-item">About</li>
+          <li class="header__nav-list-item">Contact</li>
         </ul>
       </nav>
       <div class="header__business">
@@ -29,7 +35,7 @@
           Rebecca is the top consultancy specializing in business growth using
           online marketing and conversion optimization tactics
         </p>
-        <a href="#"></a>
+        <button class="btn">Details</button>
       </div>
     </header>
     <section class="introduction">
@@ -47,10 +53,12 @@
           </p>
           <p>Louise Donovan - CEO</p>
         </div>
-        <div class="introduction__content-2"></div>
+        <div class="introduction__content-2">
+          <img src="#" alt="Image" />
+        </div>
       </div>
       <div class="introduction__description">
-        <div class="introduction__description-1">
+        <div class="introduction__description-show">
           <img src="#" alt="Logo" />
           <h2 class="heading-2">Environment Analysis</h2>
           <p>
@@ -58,7 +66,7 @@
             position in the business environment
           </p>
         </div>
-        <div class="introduction__description-2">
+        <div class="introduction__description-show">
           <img src="#" alt="Logo" />
           <h2>Development Planning</h2>
           <p>
@@ -66,7 +74,7 @@
             design and plan your development strategy
           </p>
         </div>
-        <div class="introduction__description-3">
+        <div class="introduction__description-show">
           <img src="#" alt="Logo" />
           <h2>Execution & Evaluation</h2>
           <p>
@@ -82,78 +90,111 @@
         <h2>We offer some of the best business growth services in town</h2>
       </div>
       <div class="services__offers">
-        <div class="services__offer-1">
-          <img src="#" alt="Offer 1" />
-          <h3>Off the ground off the ground</h3>
+        <div class="services__offers-show">
+          <img src="#" alt="Offer 1" class="services__offers-show-img" />
+          <h3 class="heading-3 services__offers-show-heading">
+            Off the ground off the ground
+          </h3>
           <p>
             Perfect for fresh ideas of young startups, this package will help
             get the business of the ground
           </p>
-          <ul class="services__list">
-            <li class="services__list-item">Enviroment and competition</li>
-            <li class="services__list-item">Designing the marketing plan</li>
+          <ul class="services__offers-show-list">
+            <li class="services__offers-show-list-item">
+              Enviroment and competition
+            </li>
+            <li class="services__offers-show-list-item">
+              Designing the marketing plan
+            </li>
           </ul>
-          <p>Starting at <span class="services__price">$199</span></p>
-          <button class="btn">Details</button>
+          <p class="services__offers-show-price">
+            Starting at <span class="services__offers-show-price">$199</span>
+          </p>
+          <button class="btn services__offers-show-button">Details</button>
         </div>
-        <div class="services__offer-2">
+        <div class="services__offers-show">
           <img src="#" alt="Offer 2" />
-          <h3>Accelerated growth</h3>
+          <h3 class="heading-3 services__offers-show-heading">
+            Accelerated growth
+          </h3>
           <p>
             Use this services pack to give your company the necessary impulse to
             become an industry leader
           </p>
-          <ul class="services__list">
-            <li class="services__list-item">Business strategy planning</li>
-            <li class="services__list-item">Taking the planned actions</li>
+          <ul class="services__offers-show-list">
+            <li class="services__offers-show-list-item">
+              Business strategy planning
+            </li>
+            <li class="services__offers-show-list-item">
+              Taking the planned actions
+            </li>
           </ul>
-          <p>Starting at <span class="services__price">$299</span></p>
-          <button class="btn">Details</button>
+          <p class="services__offers-show-price">
+            Starting at <span class="services__offers-show-price">$299</span>
+          </p>
+          <button class="btn services__offers-show-button">Details</button>
         </div>
-        <div class="services__offer-3">
+        <div class="services__offers-show">
           <img src="#" alt="Offer 3" />
-          <h3>Market domination</h3>
+          <h3 class="heading-3 services__offers-show-heading">
+            Market domination
+          </h3>
           <p>
             You already are a reference point in your industry now you need to
             learn about acquisitions
           </p>
-          <ul class="services__list">
-            <li class="services__list-item">Maintaining the leader status</li>
-            <li class="services__list-item">Acquisitions the right way</li>
+          <ul class="services__offers-show-list">
+            <li class="services__offers-show-list-item">
+              Maintaining the leader status
+            </li>
+            <li class="services__offers-show-list-item">
+              Acquisitions the right way
+            </li>
           </ul>
-          <p>Starting at <span class="services__price">$299</span></p>
-          <button class="btn">Details</button>
+          <p class="services__offers-show-price">
+            Starting at <span class="services__offers-show-price">$299</span>
+          </p>
+          <button class="btn services__offers-show-button">Details</button>
         </div>
       </div>
     </section>
     <section class="expertise">
-      <div class="expertise__img-1">
-        <img src="#" alt="sda" />
+      <div class="expertise__img">
+        <img
+          src="/img/sasha-freemind-nXo2ZsKHTHg-unsplash.jpg"
+          alt="Picture 1"
+        />
       </div>
       <div class="expertise__description">
-        <h2 class="heading-2">
+        <h2 class="heading-2 expertise__description-heading">
           Accelerated business growth to improve revenue numbers
         </h2>
-        <ul class="expertise__list">
-          <li class="expertise__list-item">How can aria help your business</li>
+        <ul class="expertise__description-list-1">
+          <li class="expertise__description-list-item">
+            How can aria help your business
+          </li>
           <p>
             At Rebecca solutions we've taken the consultancy concept one step
             further by offering a full service management organizations with
             expertise.
           </p>
-          <li class="expertise__list-item">
+          <li class="expertise__description-list-item">
             Great strategic business planning
           </li>
-          <li class="expertise__list-item">Online marketing campaigns</li>
+          <li class="expertise__description-list-item">
+            Online marketing campaigns
+          </li>
         </ul>
       </div>
       <div class="expertise__description">
-        <ul class="expertise__list">
-          <li class="expertise__list-item">Business</li>
-          <li class="expertise__list-item">Expertise</li>
-          <li class="expertise__list-item">Quality</li>
+        <ul class="expertise__description-list-2">
+          <li class="expertise__description-list-2-item">Business</li>
+          <li class="expertise__description-list-2-item">Expertise</li>
+          <li class="expertise__description-list-2-item">Quality</li>
         </ul>
-        <h3>Accelerated growth</h3>
+        <h3 class="heading-3 expertise__description-heading">
+          Accelerated growth
+        </h3>
         <p>
           Rebecca provides the most innovative and customized business services
           in the industry. Our <span>Services</span> section shows how flexible
@@ -172,7 +213,12 @@
           <div class="expertise__progressbar-green"></div>
         </div>
       </div>
-      <div class="expertise__img-1"></div>
+      <div class="expertise__img">
+        <img
+          src="/img/leonard-cotte-c1Jp-fo53U8-unsplash.jpg"
+          alt="Picture 2"
+        />
+      </div>
     </section>
     <section class="testimonials">
       <h2 class="heading-2">

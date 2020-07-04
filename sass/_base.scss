@@ -1,0 +1,28 @@
+$color-primary: rgb(202, 22, 163);
+$color-primary-dark: rgb(255, 58, 189);
+
+$color-secondary: rgb(46, 9, 37);
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$font-primary: "Nunito", sans-serif;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 300;
+    line-height: 1.6;
+}

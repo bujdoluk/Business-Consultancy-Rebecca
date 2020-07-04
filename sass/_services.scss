@@ -1,0 +1,48 @@
+.services {
+  background-color: $color-grey-light-1;
+  padding: 0 5%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20vh;
+  }
+
+  &__offers {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+
+    &-show {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 0.1rem solid black;
+      border-radius: 1rem;
+      padding: 0 2rem;
+
+      &-list {
+        list-style: none;
+      }
+
+      &-heading {
+        text-align: center;
+      }
+
+      &-price {
+        align-self: center;
+      }
+
+      &-button {
+        align-self: center;
+      }
+    }
+  }
+}

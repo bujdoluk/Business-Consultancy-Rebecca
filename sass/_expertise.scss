@@ -1,0 +1,41 @@
+.expertise {
+  background-color: white;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  &__img {
+    width: 100%;
+
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+
+    &-heading {
+      text-align: center;
+    }
+
+    &-list-1 {
+      list-style: none;
+    }
+
+    &-list-2 {
+      list-style: none;
+      display: inline-flex;
+      padding: 2rem;
+
+      &-item {
+        padding: 0 2rem;
+      }
+    }
+  }
+}
