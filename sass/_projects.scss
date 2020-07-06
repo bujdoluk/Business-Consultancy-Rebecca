@@ -1,0 +1,110 @@
+.projects {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10rem;
+
+  &__heading {
+    margin-bottom: 5rem;
+  }
+
+  &__buttons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__list {
+    margin: 0 1.1rem 2.5rem 1.1rem;
+  }
+
+  &__images {
+    width: 86vw;
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: repeat(4, 1fr);
+
+    &-shoots1 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/jack-b-iA9-ZBGgEwo-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &-shoots2 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/cherry-laithang-MT1OB3FNx-M-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &-shoots3 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/emre-karatas-P1-klFjzV14-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &-shoots4 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/radek-kilijanek-Mz0rv0EbJGk-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &-shoots5 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/sasha-freemind-nXo2ZsKHTHg-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &-shoots6 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/abigail-lynn-rdmJc2Os4EM-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &-shoots7 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/alps-patel-Eb40vRVVifQ-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &-shoots8 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/ben-maguire-FTYgqLeseI4-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}

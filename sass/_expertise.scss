@@ -2,8 +2,8 @@
   background-color: white;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 
   &__img {
     width: 100%;
@@ -18,7 +18,7 @@
   &__description {
     display: flex;
     flex-direction: column;
-    padding: 10rem;
+    padding: 7rem;
 
     &-heading {
       text-align: center;
@@ -26,15 +26,73 @@
 
     &-list-1 {
       list-style: none;
+      padding: 2rem;
+      font-size: 1.5rem;
+      position: relative;
+
+      &-item::before {
+        content: "";
+        border-color: transparent $color-primary-light;
+        border-style: solid;
+        border-width: 0.6rem 0 0.6rem 0.9rem;
+        display: block;
+        height: 0;
+        width: 0;
+        left: -1.7rem;
+        top: 1.6rem;
+        position: relative;
+      }
+
+      &-paragraph {
+        font-size: 1.2rem;
+        color: #aaa;
+      }
     }
 
     &-list-2 {
       list-style: none;
       display: inline-flex;
-      padding: 2rem;
+      justify-content: space-around;
+      padding: 1rem;
+
+      &-span {
+        color: $color-primary-light;
+      }
+
+      &-paragraph {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
 
       &-item {
         padding: 0 2rem;
+        font-size: 1.5rem;
+      }
+    }
+
+    &-progressbar {
+      height: 3rem;
+      margin: 0.5rem 0;
+
+      &-1 {
+        background-color: $color-primary-light;
+        border-radius: 0.2rem;
+        height: 3rem;
+        width: 100%;
+      }
+
+      &-2 {
+        background-color: $color-primary-light;
+        border-radius: 0.2rem;
+        height: 3rem;
+        width: 76%;
+      }
+
+      &-3 {
+        background-color: $color-primary-light;
+        border-radius: 0.2rem;
+        height: 3rem;
+        width: 90%;
       }
     }
   }

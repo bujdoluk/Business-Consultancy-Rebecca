@@ -1,28 +1,88 @@
-$color-primary: rgb(202, 22, 163);
-$color-primary-dark: rgb(255, 58, 189);
+$color-primary-dark: rgb(202, 22, 163);
+$color-primary-light: rgb(255, 58, 189);
 
-$color-secondary: rgb(46, 9, 37);
+$color-secondary: rgb(61, 16, 50);
 
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #aaa;
 
 $font-primary: "Nunito", sans-serif;
 
+.heading-1 {
+  font-size: 6rem;
+}
+
+.heading-2 {
+  font-size: 3rem;
+}
+
+.heading-3 {
+  font-size: 2rem;
+}
+
+.heading-4 {
+  font-size: 1.7rem;
+  color: rgb(255, 58, 189);
+}
+
+.heading-5 {
+  font-size: 1.5rem;
+}
+
+.btn-pink {
+  font-size: 2rem;
+  border-radius: 1rem;
+  font-family: bold;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.5rem 3.2rem;
+  color: white;
+  background-color: $color-primary-light;
+  display: inline-block;
+}
+
+.btn-white {
+  font-size: 2rem;
+  border-radius: 1rem;
+  font-family: bold;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.5rem 3.2rem;
+  color: $color-primary-light;
+  background-color: white;
+  display: inline-block;
+}
+
+.btn-grey {
+  font-size: 2rem;
+  border-radius: 1rem;
+  font-family: bold;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.5rem 3.2rem;
+  color: rgb(100, 100, 100);
+  background-color: rgb(219, 212, 212);
+  display: inline-block;
+}
+
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: $font-primary;
-    font-weight: 300;
-    line-height: 1.6;
+  font-family: $font-primary;
+  font-weight: 300;
+  line-height: 1.6;
 }

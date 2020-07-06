@@ -1,0 +1,30 @@
+.footer {
+  height: 35vh;
+  background-color: $color-secondary;
+  color: white;
+  padding: 4% 5%;
+
+  display: flex;
+  position: relative;
+
+  &__links {
+    padding: 1.8rem;
+    font-size: 1.3rem;
+    list-style: none;
+
+    &-1 {
+      color: white;
+      font-size: 1.3rem;
+      line-height: 2;
+      padding: 1rem 0;
+    }
+  }
+
+  &__copyright {
+    position: absolute;
+    font-size: 1.3rem;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

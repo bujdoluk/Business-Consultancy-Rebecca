@@ -1,3 +1,101 @@
+.about {
+  height: 60vh;
+  margin: 3rem 0;
+  padding: 0 7rem;
+  display: grid;
+  grid-template-columns: 50% 50%; }
+  .about__image img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.6rem; }
+  .about__content {
+    padding: 3rem 5rem; }
+    .about__content-paragraph {
+      font-size: 1.5rem; }
+    .about__content-list {
+      list-style: none;
+      font-size: 1.5rem;
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 1.5rem; }
+      .about__content-list-item::before {
+        content: "";
+        border-color: transparent #ff3abd;
+        border-style: solid;
+        border-width: 0.6rem 0 0.6rem 0.9rem;
+        display: block;
+        height: 0;
+        width: 0;
+        left: -1.7rem;
+        top: 1.6rem;
+        position: relative; }
+    .about__content-result {
+      list-style: none;
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: row; }
+      .about__content-result-number {
+        font-weight: 900;
+        font-size: 3rem;
+        color: #ff3abd;
+        padding: 0 1rem; }
+      .about__content-result-text {
+        line-height: 1;
+        margin-top: 0.8rem; }
+
+.heading-1 {
+  font-size: 6rem; }
+
+.heading-2 {
+  font-size: 3rem; }
+
+.heading-3 {
+  font-size: 2rem; }
+
+.heading-4 {
+  font-size: 1.7rem;
+  color: #ff3abd; }
+
+.heading-5 {
+  font-size: 1.5rem; }
+
+.btn-pink {
+  font-size: 2rem;
+  border-radius: 1rem;
+  font-family: bold;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.5rem 3.2rem;
+  color: white;
+  background-color: #ff3abd;
+  display: inline-block; }
+
+.btn-white {
+  font-size: 2rem;
+  border-radius: 1rem;
+  font-family: bold;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.5rem 3.2rem;
+  color: #ff3abd;
+  background-color: white;
+  display: inline-block; }
+
+.btn-grey {
+  font-size: 2rem;
+  border-radius: 1rem;
+  font-family: bold;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.5rem 3.2rem;
+  color: #646464;
+  background-color: #dbd4d4;
+  display: inline-block; }
+
 *,
 *::before,
 *::after {
@@ -14,12 +112,139 @@ body {
   font-weight: 300;
   line-height: 1.6; }
 
+.callme {
+  height: 60vh;
+  background-color: #3d1032;
+  display: flex; }
+  .callme__description {
+    width: 50%;
+    padding: 7rem;
+    color: white; }
+    .callme__description-paragraph {
+      font-size: 1.5rem;
+      margin-bottom: 2rem; }
+    .callme__description-list {
+      font-size: 1.5rem;
+      position: relative;
+      list-style: none; }
+      .callme__description-list-item {
+        margin-bottom: 1rem;
+        padding-left: 2rem; }
+      .callme__description-list-item::before {
+        content: "";
+        border-color: transparent #ff3abd;
+        border-style: solid;
+        border-width: 0.6rem 0 0.6rem 0.9rem;
+        display: block;
+        height: 0;
+        width: 0;
+        left: -1.7rem;
+        top: 1.6rem;
+        position: relative; }
+  .callme__section {
+    width: 50%;
+    padding: 7rem;
+    color: white;
+    display: flex;
+    flex-direction: column; }
+    .callme__section-input {
+      height: 4rem;
+      width: 45rem;
+      margin-bottom: 3rem;
+      border-radius: 0.5rem;
+      border: none; }
+    .callme__section-pink {
+      color: #ff3abd; }
+    .callme__section-checkbox1 {
+      display: block;
+      position: relative;
+      padding-left: 3.5rem;
+      margin-bottom: 1.2rem;
+      cursor: pointer;
+      font-size: 1.5rem;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .callme__section-checkbox1 input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0; }
+    .callme__section .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 2rem;
+      width: 2rem;
+      background-color: #eee;
+      z-index: 10;
+      border-radius: 100rem; }
+    .callme__section-checkbox1:hover input ~ .checkmark {
+      background-color: #ccc; }
+    .callme__section-checkbox1 input:checked ~ .checkmark {
+      background-color: #ff3abd; }
+    .callme__section .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    .callme__section-checkbox1 input:checked ~ .checkmark:after {
+      display: block; }
+    .callme__section-checkbox1 .checkmark:after {
+      left: 0.9rem;
+      top: 0.5rem;
+      width: 0.5rem;
+      height: 1rem;
+      border: solid white;
+      border-width: 0 0.3rem 0.3rem 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+
+.consultants {
+  background-color: #f9f7f6;
+  height: 70vh;
+  width: 100%;
+  padding: 7rem; }
+  .consultants__heading {
+    text-align: center;
+    margin-bottom: 2rem; }
+  .consultants__paragraph {
+    font-size: 1.6rem;
+    text-align-last: center;
+    margin-bottom: 5rem; }
+  .consultants__content {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    align-items: center;
+    justify-items: center; }
+    .consultants__content-show {
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .consultants__content-show-span {
+        font-family: bold;
+        font-weight: 600;
+        font-size: 2rem; }
+      .consultants__content-show img {
+        display: block;
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        margin-bottom: 2rem; }
+
+.contact {
+  height: 50vh;
+  display: flex; }
+
 .expertise {
   background-color: white;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; }
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
   .expertise__img {
     width: 100%; }
     .expertise__img img {
@@ -29,21 +254,92 @@ body {
   .expertise__description {
     display: flex;
     flex-direction: column;
-    padding: 10rem; }
+    padding: 7rem; }
     .expertise__description-heading {
       text-align: center; }
     .expertise__description-list-1 {
-      list-style: none; }
+      list-style: none;
+      padding: 2rem;
+      font-size: 1.5rem;
+      position: relative; }
+      .expertise__description-list-1-item::before {
+        content: "";
+        border-color: transparent #ff3abd;
+        border-style: solid;
+        border-width: 0.6rem 0 0.6rem 0.9rem;
+        display: block;
+        height: 0;
+        width: 0;
+        left: -1.7rem;
+        top: 1.6rem;
+        position: relative; }
+      .expertise__description-list-1-paragraph {
+        font-size: 1.2rem;
+        color: #aaa; }
     .expertise__description-list-2 {
       list-style: none;
       display: inline-flex;
-      padding: 2rem; }
+      justify-content: space-around;
+      padding: 1rem; }
+      .expertise__description-list-2-span {
+        color: #ff3abd; }
+      .expertise__description-list-2-paragraph {
+        font-size: 1.3rem;
+        margin-bottom: 1rem; }
       .expertise__description-list-2-item {
-        padding: 0 2rem; }
+        padding: 0 2rem;
+        font-size: 1.5rem; }
+    .expertise__description-progressbar {
+      height: 3rem;
+      margin: 0.5rem 0; }
+      .expertise__description-progressbar-1 {
+        background-color: #ff3abd;
+        border-radius: 0.2rem;
+        height: 3rem;
+        width: 100%; }
+      .expertise__description-progressbar-2 {
+        background-color: #ff3abd;
+        border-radius: 0.2rem;
+        height: 3rem;
+        width: 76%; }
+      .expertise__description-progressbar-3 {
+        background-color: #ff3abd;
+        border-radius: 0.2rem;
+        height: 3rem;
+        width: 90%; }
+
+.footer {
+  height: 35vh;
+  background-color: #3d1032;
+  color: white;
+  padding: 4% 5%;
+  display: flex;
+  position: relative; }
+  .footer__links {
+    padding: 1.8rem;
+    font-size: 1.3rem;
+    list-style: none; }
+    .footer__links-1 {
+      color: white;
+      font-size: 1.3rem;
+      line-height: 2;
+      padding: 1rem 0; }
+  .footer__copyright {
+    position: absolute;
+    font-size: 1.3rem;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%); }
 
 .header {
-  background-color: #ca16a3;
+  background-image: linear-gradient(rgba(255, 58, 189, 0.35), rgba(255, 58, 189, 0.35)), url(/img/jack-b-iA9-ZBGgEwo-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  color: white;
   display: flex;
   flex-direction: column; }
   .header__nav {
@@ -57,6 +353,11 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: center; }
+      .header__nav-logo-img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 100rem;
+        margin-right: 1rem; }
     .header__nav-list {
       display: flex;
       flex-direction: row;
@@ -86,17 +387,119 @@ body {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      justify-content: center; }
+      justify-content: flex-start;
+      margin-top: 5rem 0 0 3rem;
+      padding: 4rem 6rem;
+      font-size: 1.5rem; }
+      .introduction__content-1-ceo {
+        font-weight: 700; }
     .introduction__content-2 {
       width: 50%; }
+      .introduction__content-2 img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%; }
   .introduction__description {
     display: flex;
     flex: 0 0 100%; }
     .introduction__description-show {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: flex-start; }
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 2.5rem; }
+      .introduction__description-show-paragraph {
+        font-size: 1.5rem; }
+      .introduction__description-show svg {
+        display: block;
+        width: 7rem;
+        height: 7rem;
+        fill: #ff3abd; }
+
+.projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10rem; }
+  .projects__heading {
+    margin-bottom: 5rem; }
+  .projects__buttons {
+    list-style: none;
+    display: flex;
+    flex-direction: row; }
+  .projects__list {
+    margin: 0 1.1rem 2.5rem 1.1rem; }
+  .projects__images {
+    width: 86vw;
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: repeat(4, 1fr); }
+    .projects__images-shoots1 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/jack-b-iA9-ZBGgEwo-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%; }
+    .projects__images-shoots2 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/cherry-laithang-MT1OB3FNx-M-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%; }
+    .projects__images-shoots3 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/emre-karatas-P1-klFjzV14-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%; }
+    .projects__images-shoots4 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/radek-kilijanek-Mz0rv0EbJGk-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%; }
+    .projects__images-shoots5 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/sasha-freemind-nXo2ZsKHTHg-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%; }
+    .projects__images-shoots6 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/abigail-lynn-rdmJc2Os4EM-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%; }
+    .projects__images-shoots7 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/alps-patel-Eb40vRVVifQ-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%; }
+    .projects__images-shoots8 {
+      background-size: cover;
+      background-position: center;
+      display: block;
+      height: 23rem;
+      background-image: url(/img/ben-maguire-FTYgqLeseI4-unsplash.jpg);
+      max-width: 100%;
+      max-height: 100%; }
 
 .services {
   background-color: #f9f7f6;
@@ -109,25 +512,86 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: 20vh; }
+    height: 20vh;
+    margin-bottom: 4rem; }
   .services__offers {
-    height: 60vh;
+    height: 57vh;
     display: flex;
     flex-direction: row;
-    gap: 4rem; }
+    gap: 5rem; }
     .services__offers-show {
       background-color: white;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      border: 0.1rem solid black;
+      justify-content: flex-start;
+      border: 0.1rem solid #dbdada;
       border-radius: 1rem;
-      padding: 0 2rem; }
+      width: 100%;
+      position: relative; }
+      .services__offers-show-img1 {
+        background-size: cover;
+        background-position: center;
+        display: block;
+        height: 23rem;
+        background-image: url(/img/jack-b-iA9-ZBGgEwo-unsplash.jpg);
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 1.5rem; }
+      .services__offers-show-img2 {
+        background-size: cover;
+        background-position: center;
+        display: block;
+        height: 23rem;
+        background-image: url(/img/radek-kilijanek-Mz0rv0EbJGk-unsplash.jpg);
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 1.5rem; }
+      .services__offers-show-img3 {
+        background-size: cover;
+        background-position: center;
+        display: block;
+        height: 23rem;
+        background-image: url(/img/emily-karakis-_6MkY7x3thQ-unsplash.jpg);
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 1.5rem; }
+      .services__offers-show-paragraph {
+        padding: 0 3rem;
+        font-size: 1.5rem;
+        hyphens: auto;
+        margin-bottom: 1.5rem; }
       .services__offers-show-list {
-        list-style: none; }
+        list-style: none;
+        padding: 0 5rem;
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem; }
+        .services__offers-show-list-item::before {
+          content: "";
+          border-color: transparent #ff3abd;
+          border-style: solid;
+          border-width: 0.6rem 0 0.6rem 0.9rem;
+          display: block;
+          height: 0;
+          width: 0;
+          left: -1.7rem;
+          top: 1.6rem;
+          position: relative; }
       .services__offers-show-heading {
         text-align: center; }
       .services__offers-show-price {
-        align-self: center; }
+        align-self: center;
+        font-size: 2rem;
+        font-weight: bold; }
+        .services__offers-show-price-span {
+          color: #ff3abd; }
       .services__offers-show-button {
-        align-self: center; }
+        align-self: center;
+        position: absolute;
+        top: 49rem; }
+
+.testimonials {
+  height: 60vh;
+  background-color: chocolate;
+  margin: 0 auto;
+  position: relative;
+  width: 70%; }

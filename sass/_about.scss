@@ -1,0 +1,64 @@
+.about {
+  height: 60vh;
+  margin: 3rem 0;
+  padding: 0 7rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  &__image {
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 0.6rem;
+    }
+  }
+
+  &__content {
+    padding: 3rem 5rem;
+
+    &-paragraph {
+      font-size: 1.5rem;
+    }
+
+    &-list {
+      list-style: none;
+      font-size: 1.5rem;
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 1.5rem;
+
+      &-item::before {
+        content: "";
+        border-color: transparent rgb(255, 58, 189);
+        border-style: solid;
+        border-width: 0.6rem 0 0.6rem 0.9rem;
+        display: block;
+        height: 0;
+        width: 0;
+        left: -1.7rem;
+        top: 1.6rem;
+        position: relative;
+      }
+    }
+
+    &-result {
+      list-style: none;
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: row;
+
+      &-number {
+        font-weight: 900;
+        font-size: 3rem;
+        color: rgb(255, 58, 189);
+        padding: 0 1rem;
+      }
+
+      &-text {
+        line-height: 1;
+        margin-top: 0.8rem;
+      }
+    }
+  }
+}
