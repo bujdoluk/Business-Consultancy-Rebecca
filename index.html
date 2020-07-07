@@ -409,49 +409,43 @@
         />
       </div>
     </section>
-    <section class="testimonials">
-      <div class="testimonials__customer">
-        <img class="testimonials__customer-img" src="#" alt="Photo 1" />
-        <blockquote class="testimonials__customer-content">
-          At the beginning I thought the prices are a little high for what they
-          offer but they over deliver each and every time.
-        </blockquote>
-        <p class="testimonials__customer-position">Ronald Spice - Owner</p>
-      </div>
-      <div class="testimonials__customer">
-        <img class="testimonials__customer-img" src="#" alt="Photo 1" />
-        <blockquote class="testimonials__customer-content">
-          I recommended Rebecca to every business owner or growth leader that
-          wants to take his company to the next level.
-        </blockquote>
-        <p class="testimonials__customer-position">Lindsay Rune - Manager</p>
-      </div>
-      <div class="testimonials__customer">
-        <img class="testimonials__customer-img" src="#" alt="Photo 1" />
-        <blockquote class="testimonials__customer-content">
-          My goals for using Rebecca's services seemed high when I first met
-          them but they've met them with no problems.
-        </blockquote>
-        <p class="testimonials__customer-position">Ann Black - Consultant</p>
-      </div>
-      <div class="testimonials__customer">
-        <img class="testimonials__customer-img" src="#" alt="Photo 1" />
-        <blockquote class="testimonials__customer-content">
-          Rebecca offers powerful suite of tools that every marketing team must
-          have. And if you get stuck, their support team will help you out.
-        </blockquote>
-        <p class="testimonials__customer-position">Tim Outley- Manager</p>
-      </div>
-      <div class="testimonials__customer">
-        <img class="testimonials__customer-img" src="#" alt="Photo 1" />
-        <blockquote class="testimonials__customer-content">
-          We developed a great partnership with Rebecca Consultancy and their
-          dedication to our website is evident in all aspects. We appreciate
-          their attention to detail and creative approach.
-        </blockquote>
-        <p class="testimonials__customer-position">
-          Sabina Panday - Corporate Strategist
-        </p>
+    <section class="testimonial">
+      <h2 class="heading-2 testimonial-heading">What our Customers say about us</h2>
+      <div class="testimonial-slider">
+        <ul class="slider">
+          <li>
+            <div class="testimonial-slider-content">
+              <div class="testimonial-slider-content-image1"></div>
+              <q>At the beginning I thought the prices are a little high for what they
+                offer but they over deliver each and every time.</q>
+              <p class="source">Ronald Spice - Owner</p>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-slider-content">
+              <div class="testimonial-slider-content-image2"></div>
+              <q>I recommended Rebecca to every business owner or growth leader that
+                wants to take his company to the next level.</q>
+              <p class="source">Lindsay Rune - Manager</p>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-slider-content">
+              <div class="testimonial-slider-content-image3"></div>
+              <q>My goals for using Rebecca's services seemed high when I first met
+                them but they've met them with no problems.</q>
+              <p class="source">Ann Black - Consultant</p>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial-slider-content">
+              <div class="testimonial-slider-content-image4"></div>
+              <q>Rebecca offers powerful suite of tools that every marketing team must
+                have. And if you get stuck, their support team will help you out.</q>
+              <p class="source">Tim Outley- Manager</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="callme">
@@ -628,63 +622,40 @@
     <form action="#" class="contact">
       <div class="contact__content">
         <h4 class="heading-4">Contact</h4>
-        <h2 class="heading-2">Get In Touch Using The Form</h2>
+        <h2 class="heading-2 contact-heading">Get In Touch Using The Form</h2>
         <p class="contact__paragraph">
           You can stop by our office for a cup of coffee and just use the
           contact form below for any questions and inquiries
         </p>
         <div class="contact__location">
-          <svg class="contact__location-icon">
-            <use xlink:href="#"></use>
-          </svg>
           <p>22nd Innovative Street, San Francisco, CA 94043, US</p>
         </div>
         <div class="contact__numbers">
-          <svg class="contact__numbers-icon">
-            <use xlink:href="#"></use>
-          </svg>
-          <p><u>+81 720 22 126</u></p>
-          <svg class="contact__numbers-icon">
-            <use xlink:href="#"></use>
-          </svg>
-          <p><u>+81 700 22 185</u></p>
-          <svg class="contact__numbers-icon">
-            <use xlink:href="#"></use>
-          </svg>
-          <p><u>office@rebecca.com</u></p>
-        </div>
-        <div class="contact__socials">
-          <svg class="contact__social-icon">
-            <use xlink:href="#"></use>
-          </svg>
-          <svg class="contact__social-icon">
-            <use xlink:href="#"></use>
-          </svg>
-          <svg class="contact__social-icon">
-            <use xlink:href="#"></use>
-          </svg>
-          <svg class="contact__social-icon">
-            <use xlink:href="#"></use>
-          </svg>
-          <svg class="contact__social-icon">
-            <use xlink:href="#"></use>
-          </svg>
+          <p>+81 720 22 126</p>
+          <p>+81 721 24 856</p>
+          <p>office@rebecca.com</p>
         </div>
       </div>
       <div class="contact__form">
-        <input type="text" id="name" name="name" placeholder="Name" /><br />
-        <input type="text" id="email" name="email" placeholder="Email" /><br />
+        <input type="text" id="name" name="name" placeholder="Name" class="contact__form-input" /><br />
+        <input type="text" id="email" name="email" placeholder="Email" class="contact__form-input" /><br />
         <textarea
           id="subject"
           name="subject"
-          placeholder="Your message"
+          placeholder="Your message..."
           style="height: 200px;"
+          class="contact__form-input"
         ></textarea>
-        <input type="radio" id="other" name="gender" value="other" />
-        <p class="callme_section-paragraph">
-          I agree with Aria's stated <span>Privacy Policy</span> and
-          <span>Terms & Conditions</span>
-        </p>
+        <label class="contact__form-checkbox1">
+          I agree with Rebecca's stated
+          <span class="contact__form-pink">
+            Privacy Policy
+          </span>
+          and
+          <span class="contact__form-pink">Terms & Conditions</span>
+          <input type="checkbox" checked="checked"  class="contact__form-input"/>
+          <span class="checkmark"></span>
+        </label>
         <button class="btn-pink">Submit Message</button>
       </div>
     </form>

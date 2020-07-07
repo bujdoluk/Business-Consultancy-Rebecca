@@ -236,8 +236,85 @@ body {
         margin-bottom: 2rem; }
 
 .contact {
-  height: 50vh;
-  display: flex; }
+  background-color: #f9f7f6;
+  height: 60vh;
+  padding: 4rem 7rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5rem; }
+  .contact-heading {
+    margin-bottom: 2rem; }
+  .contact__paragraph {
+    font-size: 1.5rem; }
+  .contact__location {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #ff3abd; }
+  .contact__numbers {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #ff3abd; }
+  .contact__form {
+    border: none;
+    margin: 1.5rem 0;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .contact__form-input {
+      height: 4rem;
+      width: 30rem;
+      margin-bottom: 3rem;
+      border-radius: 0.5rem;
+      border: 0.1rem solid #aaa; }
+    .contact__form-pink {
+      color: #ff3abd; }
+    .contact__form-checkbox1 {
+      display: block;
+      position: relative;
+      padding-left: 3.5rem;
+      margin-bottom: 1.2rem;
+      cursor: pointer;
+      font-size: 1.5rem;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .contact__form-checkbox1 input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0; }
+    .contact__form .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 2rem;
+      width: 2rem;
+      background-color: #c4c4c4;
+      z-index: 10;
+      border-radius: 100rem; }
+    .contact__form-checkbox1:hover input ~ .checkmark {
+      background-color: #ccc; }
+    .contact__form-checkbox1 input:checked ~ .checkmark {
+      background-color: #ff3abd; }
+    .contact__form .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    .contact__form-checkbox1 input:checked ~ .checkmark:after {
+      display: block; }
+    .contact__form-checkbox1 .checkmark:after {
+      left: 0.9rem;
+      top: 0.5rem;
+      width: 0.5rem;
+      height: 1rem;
+      border: solid white;
+      border-width: 0 0.3rem 0.3rem 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
 
 .expertise {
   background-color: white;
@@ -589,9 +666,170 @@ body {
         position: absolute;
         top: 49rem; }
 
-.testimonials {
-  height: 60vh;
-  background-color: chocolate;
+.testimonial {
+  height: 100vh;
+  background-image: linear-gradient(rgba(255, 58, 189, 0.8), rgba(158, 44, 120, 0.8)), url(/img/mimi-thian-vdXMSiX-n6M-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0 auto;
-  position: relative;
-  width: 70%; }
+  /* KEYFRAME DECLARATIONS */ }
+  .testimonial-heading {
+    color: white;
+    text-align: center;
+    padding-top: 4rem; }
+  .testimonial-slider {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 100px; }
+    .testimonial-slider-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .testimonial-slider-content-image1 {
+        width: 30rem;
+        height: 30rem;
+        display: block;
+        border-radius: 100%;
+        background: linear-gradient(rgba(255, 58, 189, 0.35), rgba(255, 58, 189, 0.35)), url(/img/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg) center no-repeat;
+        background-size: cover; }
+      .testimonial-slider-content-image2 {
+        width: 30rem;
+        height: 30rem;
+        display: block;
+        border-radius: 100%;
+        background: linear-gradient(rgba(255, 58, 189, 0.35), rgba(255, 58, 189, 0.35)), url(/img/christopher-campbell-rDEOVtE7vOs-unsplash.jpg) center no-repeat;
+        background-size: cover; }
+      .testimonial-slider-content-image3 {
+        width: 30rem;
+        height: 30rem;
+        display: block;
+        border-radius: 100%;
+        background: linear-gradient(rgba(255, 58, 189, 0.35), rgba(255, 58, 189, 0.35)), url(/img/dan-ROJFuWCsfmA-unsplash.jpg) center no-repeat;
+        background-size: cover; }
+      .testimonial-slider-content-image4 {
+        width: 30rem;
+        height: 30rem;
+        display: block;
+        border-radius: 100%;
+        background: linear-gradient(rgba(255, 58, 189, 0.35), rgba(255, 58, 189, 0.35)), url(/img/jakob-owens-DQPP9rVLYGQ-unsplash.jpg) center no-repeat;
+        background-size: cover; }
+  .testimonial-slider ul.slider {
+    display: block;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 65rem;
+    overflow: hidden;
+    margin: 0 auto; }
+  .testimonial-slider ul.slider li {
+    position: absolute;
+    display: block;
+    width: 100%;
+    opacity: 0;
+    margin: 0 auto; }
+  .testimonial-slider ul.slider li:nth-child(1) {
+    opacity: 1;
+    -webkit-animation: fade-animation-1 25s infinite;
+    animation: fade-animation-1 25s infinite; }
+  .testimonial-slider ul.slider li:nth-child(2) {
+    -webkit-animation: fade-animation-2 25s infinite;
+    animation: fade-animation-2 25s infinite; }
+  .testimonial-slider ul.slider li:nth-child(3) {
+    -webkit-animation: fade-animation-3 25s infinite;
+    animation: fade-animation-3 25s infinite; }
+  .testimonial-slider ul.slider li:nth-child(4) {
+    -webkit-animation: fade-animation-4 25s infinite;
+    animation: fade-animation-4 25s infinite; }
+  .testimonial-slider q {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    width: 70%; }
+  .testimonial-slider .source {
+    margin-top: 2.5rem;
+    font-size: 3rem;
+    color: white; }
+
+@keyframes fade-animation-1 {
+  0%,
+  25%,
+  100% {
+    opacity: 0; }
+  3%,
+  22% {
+    opacity: 1; } }
+
+@keyframes fade-animation-2 {
+  0%,
+  25%,
+  50%,
+  100% {
+    opacity: 0; }
+  28%,
+  47% {
+    opacity: 1; } }
+
+@keyframes fade-animation-3 {
+  0%,
+  50%,
+  75%,
+  100% {
+    opacity: 0; }
+  53%,
+  72% {
+    opacity: 1; } }
+
+@keyframes fade-animation-4 {
+  0%,
+  75%,
+  100% {
+    opacity: 0; }
+  78%,
+  97% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-animation-1 {
+  0%,
+  25%,
+  100% {
+    opacity: 0; }
+  3%,
+  22% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-animation-2 {
+  0%,
+  25%,
+  50%,
+  100% {
+    opacity: 0; }
+  28%,
+  47% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-animation-3 {
+  0%,
+  50%,
+  75%,
+  100% {
+    opacity: 0; }
+  53%,
+  72% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-animation-4 {
+  0%,
+  75%,
+  100% {
+    opacity: 0; }
+  78%,
+  97% {
+    opacity: 1; } }
