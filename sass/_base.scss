@@ -33,13 +33,22 @@ $font-primary: "Nunito", sans-serif;
   font-size: 2rem;
   border-radius: 1rem;
   font-family: bold;
-  border: none;
+  border: 0.1rem solid $color-primary-light;
   text-decoration: none;
   text-align: center;
   padding: 1.5rem 3.2rem;
   color: white;
   background-color: $color-primary-light;
   display: inline-block;
+  margin: 0.4rem 0;
+}
+
+.btn-pink:hover,
+.btn-pink:focus {
+  border: 0.1rem solid $color-primary-light;
+  color: $color-primary-light;
+  background-color: white;
+  transition: background-color 0.5s;
 }
 
 .btn-white {
@@ -53,6 +62,14 @@ $font-primary: "Nunito", sans-serif;
   color: $color-primary-light;
   background-color: white;
   display: inline-block;
+}
+
+.btn-white:hover,
+.btn-pink:focus {
+  border: 0.1rem solid $color-primary-light;
+  background-color: $color-primary-light;
+  color: white;
+  transition: background-color 0.5s;
 }
 
 .btn-grey {
@@ -79,6 +96,8 @@ $font-primary: "Nunito", sans-serif;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {

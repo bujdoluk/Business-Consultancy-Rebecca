@@ -1,7 +1,7 @@
 .services {
   background-color: $color-grey-light-1;
   padding: 0 5%;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
 
@@ -15,7 +15,7 @@
   }
 
   &__offers {
-    height: 57vh;
+    height: 70vh;
     display: flex;
     flex-direction: row;
     gap: 5rem;

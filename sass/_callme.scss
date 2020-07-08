@@ -1,5 +1,5 @@
 .callme {
-  height: 60vh;
+  height: 70vh;
   background-color: $color-secondary;
 
   display: flex;
@@ -47,7 +47,7 @@
     flex-direction: column;
 
     &-input {
-      height: 4rem;
+      height: 10rem;
       width: 45rem;
       margin-bottom: 3rem;
       border-radius: 0.5rem;

@@ -10,35 +10,39 @@
     />
     <meta name="description" content="Rebecca Business Consultancy" />
     <meta name="author" content="Lukas Bujdos" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>  
     <title>Rebecca Business Consultancy</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="header__nav">
+    <header class="header" id="home">
+      <nav class="header__nav" id="navbar">
         <div class="header__nav-logo">
           <img src="./img/lotus.svg" alt="Logo" class="header__nav-logo-img" />
           <h2 class="heading-2">Rebecca</h2>
         </div>
         <ul class="header__nav-list">
-          <li class="header__nav-list-item">Home</li>
-          <li class="header__nav-list-item">Intro</li>
-          <li class="header__nav-list-item">Services</li>
-          <li class="header__nav-list-item">Call me</li>
-          <li class="header__nav-list-item">Projects</li>
-          <li class="header__nav-list-item">About</li>
-          <li class="header__nav-list-item">Contact</li>
+          <li class="header__nav-list-item"><a class="header__nav-list-item-link" href="#home">Home</a></li>
+          <li class="header__nav-list-item"><a class="header__nav-list-item-link" href="#intro">Intro</a></li>
+          <li class="header__nav-list-item"><a class="header__nav-list-item-link" href="#services">Services</a></li>
+          <li class="header__nav-list-item"><a class="header__nav-list-item-link" href="#callme">Call me</a></li>
+          <li class="header__nav-list-item"><a class="header__nav-list-item-link" href="#projects">Projects</a></li>
+          <li class="header__nav-list-item"><a class="header__nav-list-item-link" href="#about">About</a></li>
+          <li class="header__nav-list-item"><a class="header__nav-list-item-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="header__business">
         <h1 class="heading-1">Rebecca Business Consultancy</h1>
-        <p>
+        <p class="header__business-paragraph">
           Rebecca is the top consultancy specializing in business growth using
           online marketing and conversion optimization tactics
         </p>
         <button class="btn-white">Details</button>
       </div>
     </header>
-    <section class="introduction">
+    <section class="introduction" id="intro">
       <div class="introduction__content">
         <div class="introduction__content-1">
           <h4 class="heading-4">Intro</h4>
@@ -255,7 +259,7 @@
         </div>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="services__heading">
         <h4 class="heading-4">Services</h4>
         <h2 class="heading-2">
@@ -378,16 +382,16 @@
           <li class="expertise__description-list-2-item">Expertise</li>
           <li class="expertise__description-list-2-item">Quality</li>
         </ul>
-        <h3 class="heading-3 expertise__description-heading">
+        <h2 class="heading-2 expertise__description-heading">
           Accelerated growth
-        </h3>
+        </h2>
         <p class="expertise__description-list-2-paragraph">
           Rebecca provides the most innovative and customized business services
           in the industry. Our
           <span class="expertise__description-list-2-span"
             ><u>Services</u></span
           >
-          section shows how flexible we are for all 1types of budgets.
+          section shows how flexible we are for all types of budgets.
         </p>
         <h5 class="heading-5">Business development 100%</h5>
         <div class="expertise__description-progressbar">
@@ -448,11 +452,11 @@
         </ul>
       </div>
     </section>
-    <section class="callme">
+    <section class="callme" id="callme">
       <div class="callme__description">
         <h4 class="heading-4">Call me</h4>
         <h2 class="heading-2">
-          Have Us Contact You By Filling And Submitting The callme
+          Have Us Contact You By Filling And Submitting The call me
         </h2>
         <p class="callme__description-paragraph">
           You are just few steps away from a personalized offer. Just fill in
@@ -471,7 +475,7 @@
           </li>
         </ul>
       </div>
-      <div class="callme__section">
+      <form class="callme__section" id="callmeform">
         <input
           type="text"
           id="name"
@@ -512,10 +516,10 @@
             <span class="checkmark"></span>
           </label>
         </div>
-        <button class="btn-pink callme_section-btn">Call Me</button>
-      </div>
+        <button class="btn-pink">Call Me</button>
+      </form>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
       <h4 class="heading-4">Projects</h4>
       <h2 class="heading-2 projects__heading">Projects the We're Proud Of</h2>
       <ul class="projects__buttons">
@@ -561,7 +565,7 @@
           </p>
         </div>
         <div class="consultants__content-show">
-          <img src="/img/woman-1245926_1920.jpeg" alt="Photo 2" />
+          <img src="/img/woman-1245926_1920.jpg" alt="Photo 2" />
           <p>Veronique Smith</p>
           <p>
             <span class="consultants__content-show-span"
@@ -587,7 +591,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__image">
         <img src="./img/darpan-dodiya-vNlkGmJYf-A-unsplash.jpeg" alt="Img" />
       </div>
@@ -610,27 +614,30 @@
           </li>
         </ul>
         <ul class="about__content-result">
-          <li class="about__content-result-number"><span>231</span></li>
+          <li class="about__content-result-number">
+            <span class='numscroller' data-min='1' data-max='231' data-delay='5' data-increment='10'>231</span></li>
           <li class="about__content-result-text">Happy </br>Users</li>
-          <li class="about__content-result-number"><span>121</span></li>
+          <li class="about__content-result-number">
+            <span class='numscroller' data-min='1' data-max='121' data-delay='5' data-increment='10'>121</span></li>
           <li class="about__content-result-text">Issues </br>Solved</li>
-          <li class="about__content-result-number"><span>159</span></li>
+          <li class="about__content-result-number">
+            <span class='numscroller' data-min='1' data-max='159' data-delay='5' data-increment='10'>159</span></li>
           <li class="about__content-result-text">Good </br>Reviews</li>
         </ul>
       </div>
     </section>
-    <form action="#" class="contact">
+    <form action="#" class="contact" id="contact">
       <div class="contact__content">
         <h4 class="heading-4">Contact</h4>
-        <h2 class="heading-2 contact-heading">Get In Touch Using The Form</h2>
-        <p class="contact__paragraph">
+        <h2 class="heading-2 contact-content-heading">Get In Touch Using The Form</h2>
+        <p class="contact__content-paragraph">
           You can stop by our office for a cup of coffee and just use the
           contact form below for any questions and inquiries
         </p>
-        <div class="contact__location">
+        <div class="contact__content-location">
           <p>22nd Innovative Street, San Francisco, CA 94043, US</p>
         </div>
-        <div class="contact__numbers">
+        <div class="contact__content-numbers">
           <p>+81 720 22 126</p>
           <p>+81 721 24 856</p>
           <p>office@rebecca.com</p>
@@ -688,8 +695,8 @@
       </ul>
       <p class="footer__copyright">Copyright &copy; 2020 by Lukas Bujdos</p>
     </footer>
-    <script src="/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript" src="index.js"></script> 
+    <script type="text/javascript" src="numscroller-1.0.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

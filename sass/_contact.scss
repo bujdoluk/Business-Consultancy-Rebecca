@@ -1,29 +1,32 @@
 .contact {
   background-color: $color-grey-light-1;
-  height: 60vh;
+  height: 75vh;
   padding: 4rem 7rem;
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 5rem;
 
-  &-heading {
-    margin-bottom: 2rem;
-  }
+  &__content {
+    margin-top: 5rem;
+    &-heading {
+      margin-bottom: 2rem;
+    }
 
-  &__paragraph {
-    font-size: 1.5rem;
-  }
+    &-paragraph {
+      font-size: 1.5rem;
+    }
 
-  &__location {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    color: $color-primary-light;
-  }
+    &-location {
+      font-size: 1.5rem;
+      margin: 2rem 0;
+      color: $color-primary-light;
+    }
 
-  &__numbers {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    color: $color-primary-light;
+    &-numbers {
+      font-size: 1.5rem;
+      margin: 2rem 0;
+      color: $color-primary-light;
+    }
   }
 
   &__form {
