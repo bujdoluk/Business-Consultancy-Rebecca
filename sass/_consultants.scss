@@ -4,6 +4,10 @@
   width: 100%;
   padding: 7rem;
 
+  @media only screen and (max-width: $bp-large) {
+    height: 125vh;
+  }
+
   &__heading {
     text-align: center;
     margin-bottom: 2rem;
@@ -20,6 +24,11 @@
     grid-template-columns: repeat(4, 25%);
     align-items: center;
     justify-items: center;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-template-columns: repeat(2, 50%);
+    }
+
     &-show {
       font-size: 1.5rem;
       display: flex;

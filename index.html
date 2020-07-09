@@ -3,16 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rebecca Business Consultancy" />
+    <meta name="author" content="Lukas Bujdos" />
+
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;600;800&display=swap"
       rel="stylesheet"
     />
-    <meta name="description" content="Rebecca Business Consultancy" />
-    <meta name="author" content="Lukas Bujdos" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://use.fontawesome.com/19027fe9c1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>  
     <title>Rebecca Business Consultancy</title>
   </head>
@@ -32,6 +37,11 @@
           <li class="header__nav-list-item"><a class="header__nav-list-item-link" href="#about">About</a></li>
           <li class="header__nav-list-item"><a class="header__nav-list-item-link" href="#contact">Contact</a></li>
         </ul>
+        <div class="header__nav-icon">
+          <div class="header__nav-icon1"></div>
+          <div class="header__nav-icon2"></div>
+          <div class="header__nav-icon3"></div>
+        </div>
       </nav>
       <div class="header__business">
         <h1 class="heading-1">Rebecca Business Consultancy</h1>
@@ -41,6 +51,9 @@
         </p>
         <button class="btn-white">Details</button>
       </div>
+      <a href="#" class="to-top">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+      </a>
     </header>
     <section class="introduction" id="intro">
       <div class="introduction__content">
@@ -345,12 +358,7 @@
       </div>
     </section>
     <section class="expertise">
-      <div class="expertise__img">
-        <img
-          src="./img/sasha-freemind-nXo2ZsKHTHg-unsplash.jpeg"
-          alt="Picture 1"
-        />
-      </div>
+      <div class="expertise__img1"></div>
       <div class="expertise__description">
         <h2 class="heading-2 expertise__description-heading">
           Accelerated business growth to improve revenue numbers
@@ -406,12 +414,7 @@
           <div class="expertise__description-progressbar-3"></div>
         </div>
       </div>
-      <div class="expertise__img">
-        <img
-          src="./img/leonard-cotte-c1Jp-fo53U8-unsplash.jpeg"
-          alt="Picture 2"
-        />
-      </div>
+      <div class="expertise__img2"></div>
     </section>
     <section class="testimonial">
       <h2 class="heading-2 testimonial-heading">What our Customers say about us</h2>
@@ -428,7 +431,7 @@
           <li>
             <div class="testimonial-slider-content">
               <div class="testimonial-slider-content-image2"></div>
-              <q>I recommended Rebecca to every business owner or growth leader that
+              <q>I recommended Rebecca to every business owner  that
                 wants to take his company to the next level.</q>
               <p class="source">Lindsay Rune - Manager</p>
             </div>
@@ -444,8 +447,8 @@
           <li>
             <div class="testimonial-slider-content">
               <div class="testimonial-slider-content-image4"></div>
-              <q>Rebecca offers powerful suite of tools that every marketing team must
-                have. And if you get stuck, their support team will help you out.</q>
+              <q>Rebecca offers suite of tools that every team must
+                have and if you get stuck, their support team will help you.</q>
               <p class="source">Tim Outley- Manager</p>
             </div>
           </li>
@@ -516,7 +519,7 @@
             <span class="checkmark"></span>
           </label>
         </div>
-        <button class="btn-pink">Call Me</button>
+        <button class="btn-pink" id="btn-width">Call Me</button>
       </form>
     </section>
     <section class="projects" id="projects">

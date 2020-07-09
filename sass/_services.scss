@@ -5,6 +5,10 @@
   display: flex;
   flex-direction: column;
 
+  @media only screen and (max-width: $bp-large) {
+    height: 255vh;
+  }
+
   &__heading {
     display: flex;
     flex-direction: column;
@@ -20,6 +24,15 @@
     flex-direction: row;
     gap: 5rem;
 
+    @media only screen and (max-width: $bp-largest) {
+      gap: 0;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+      gap: 8rem;
+    }
+
     &-show {
       background-color: white;
       display: flex;
@@ -29,6 +42,11 @@
       border-radius: 1rem;
       width: 100%;
       position: relative;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 80%;
+        margin: 0 auto;
+      }
 
       &-img1 {
         background-size: cover;
@@ -99,6 +117,14 @@
         font-size: 2rem;
         font-weight: bold;
 
+        @media only screen and (max-width: $bp-large) {
+          margin-bottom: 7rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+          margin-bottom: 5rem;
+        }
+
         &-span {
           color: $color-primary-light;
         }
@@ -108,6 +134,10 @@
         align-self: center;
         position: absolute;
         top: 49rem;
+
+        @media only screen and (max-width: $bp-large) {
+          top: 47rem;
+        }
       }
     }
   }

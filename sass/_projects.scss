@@ -1,6 +1,14 @@
 .projects {
   height: 100vh;
 
+  @media only screen and (max-width: $bp-large) {
+    height: 160vh;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 170vh;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -15,6 +23,11 @@
     list-style: none;
     display: flex;
     flex-direction: row;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-wrap: wrap;
+      padding: 0 10rem;
+    }
   }
 
   &__list {
@@ -26,6 +39,11 @@
     display: grid;
     grid-template-rows: 2;
     grid-template-columns: repeat(4, 1fr);
+
+    @media only screen and (max-width: $bp-large) {
+      grid-template-rows: 4;
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     &-shoots1 {
       background-size: cover;

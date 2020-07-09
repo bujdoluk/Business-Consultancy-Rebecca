@@ -1,18 +1,28 @@
 .expertise {
   background-color: white;
-  height: 135vh;
+  //height: 135vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 
-  &__img {
-    width: 100%;
+  @media only screen and (max-width: $bp-large) {
+    height: 280vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
 
-    img {
-      display: block;
-      max-width: 100%;
-      max-height: 100%;
-    }
+  &__img1 {
+    height: 60rem;
+    background: url(/img/leonard-cotte-c1Jp-fo53U8-unsplash.jpeg) center center
+      no-repeat;
+    background-size: cover;
+  }
+
+  &__img2 {
+    height: 60rem;
+    background: url(/img/sasha-freemind-nXo2ZsKHTHg-unsplash.jpeg) center center
+      no-repeat;
+    background-size: cover;
   }
 
   &__description {
@@ -20,9 +30,17 @@
     flex-direction: column;
     padding: 7rem;
 
+    @media only screen and (max-width: $bp-large) {
+      justify-content: center;
+    }
+
     &-heading {
       text-align: center;
       margin-bottom: 3rem;
+
+      @media only screen and (max-width: $bp-large) {
+        margin-bottom: 0;
+      }
     }
 
     &-list-1 {

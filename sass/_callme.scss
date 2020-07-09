@@ -1,8 +1,14 @@
 .callme {
-  height: 70vh;
+  height: 75vh;
   background-color: $color-secondary;
 
   display: flex;
+
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: column;
+    height: 170vh;
+    align-items: center;
+  }
 
   &__description {
     width: 50%;
@@ -18,6 +24,7 @@
       font-size: 1.5rem;
       position: relative;
       list-style: none;
+      margin-bottom: 2rem;
 
       &-item {
         margin-bottom: 1rem;
@@ -46,12 +53,30 @@
     display: flex;
     flex-direction: column;
 
+    @media only screen and (max-width: $bp-large) {
+      width: 40%;
+      padding: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 60%;
+      padding: 3rem;
+    }
+
     &-input {
       height: 10rem;
       width: 45rem;
       margin-bottom: 3rem;
       border-radius: 0.5rem;
       border: none;
+
+      @media only screen and (max-width: $bp-largest) {
+        width: 35rem;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        height: 5rem;
+      }
     }
 
     &-pink {
@@ -119,5 +144,13 @@
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
     }
+  }
+}
+
+#btn-width {
+  width: 30%;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 40%;
   }
 }
