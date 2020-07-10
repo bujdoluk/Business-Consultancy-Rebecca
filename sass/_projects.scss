@@ -9,6 +9,26 @@
     height: 170vh;
   }
 
+  @media only screen and (max-width: $bp-small) {
+    height: 300vh;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    height: 315vh;
+  }
+
+  @media only screen and (max-width: $bp-smaller2) {
+    height: 315vh;
+  }
+
+  @media only screen and (max-width: $bp-smaller3) {
+    height: 302vh;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    height: 290vh;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -28,6 +48,11 @@
       flex-wrap: wrap;
       padding: 0 10rem;
     }
+
+    @media only screen and (max-width: $bp-smaller3) {
+      flex-wrap: wrap;
+      padding: 0 2rem;
+    }
   }
 
   &__list {
@@ -43,6 +68,15 @@
     @media only screen and (max-width: $bp-large) {
       grid-template-rows: 4;
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-rows: 8;
+      grid-template-columns: 1fr;
+    }
+
+    @media only screen and (max-width: $bp-smaller3) {
+      width: 100%;
     }
 
     &-shoots1 {

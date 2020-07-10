@@ -4,6 +4,16 @@
   color: white;
   padding: 4% 5%;
 
+  @media only screen and (max-width: $bp-small) {
+    height: 48vh;
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: $bp-smaller2) {
+    height: 82vh;
+    flex-wrap: wrap;
+  }
+
   display: flex;
   position: relative;
 
@@ -26,5 +36,9 @@
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
+
+    @media only screen and (max-width: $bp-smaller2) {
+      bottom: 4%;
+    }
   }
 }

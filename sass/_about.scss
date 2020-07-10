@@ -11,17 +11,29 @@
     grid-template-rows: repeat(2, 1fr);
   }
 
+  @media only screen and (max-width: 31.1rem) {
+    padding: 0rem 0rem;
+  }
+
   &__image {
     img {
       display: block;
       max-width: 100%;
       max-height: 100%;
       border-radius: 0.6rem;
+
+      @media only screen and (max-width: 31.1rem) {
+        max-height: auto;
+      }
     }
   }
 
   &__content {
     padding: 3rem 5rem;
+
+    @media only screen and (max-width: 31.1rem) {
+      padding: 0rem 3rem;
+    }
 
     &-paragraph {
       font-size: 1.5rem;
@@ -53,6 +65,10 @@
       font-size: 1.5rem;
       display: flex;
       flex-direction: row;
+
+      @media only screen and (max-width: 25rem) {
+        flex-wrap: wrap;
+      }
 
       &-number {
         font-weight: 900;

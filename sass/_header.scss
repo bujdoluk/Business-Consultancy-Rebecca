@@ -34,11 +34,32 @@
       flex-direction: row;
       justify-content: center;
 
+      @media only screen and (max-width: $bp-smaller2) {
+        width: 45%;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 55%;
+      }
+
       &-img {
         width: 4rem;
         height: 4rem;
         border-radius: 100rem;
         margin-right: 1rem;
+
+        @media only screen and (max-width: $bp-small) {
+          padding-bottom: 0.8rem;
+        }
+
+        @media only screen and (max-width: $bp-smaller2) {
+          padding-bottom: 0.5rem;
+        }
+
+        @media only screen and (max-width: $bp-smaller3) {
+          padding-bottom: 1.2rem;
+          padding-left: 1.5rem;
+        }
       }
     }
 
@@ -51,7 +72,7 @@
         display: none;
       } */
 
-      @media only screen and (max-width: 850px) {
+      @media only screen and (max-width: $bp-medium) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -59,10 +80,16 @@
         right: 0;
         top: 10vh;
         background-color: rgb(48, 13, 39);
-        width: 30%;
+        width: 35%;
         padding: 1rem 0 1rem 2rem;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+      }
+
+      @media only screen and (max-width: $bp-smallest1) {
+        width: 40%;
+        align-items: center;
+        justify-content: center;
       }
 
       &-item {
@@ -97,7 +124,7 @@
     &-icon {
       display: none;
 
-      @media only screen and (max-width: 850px) {
+      @media only screen and (max-width: $bp-medium) {
         display: flex;
         flex-direction: column;
         cursor: pointer;
@@ -127,6 +154,10 @@
       @media only screen and (max-width: $bp-large) {
         padding: 0 10%;
         text-align: center;
+      }
+
+      @media only screen and (max-width: $bp-smaller2) {
+        padding: 0 20%;
       }
     }
   }

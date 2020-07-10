@@ -10,10 +10,32 @@
     align-items: center;
   }
 
+  @media only screen and (max-width: $bp-small) {
+    height: 150vh;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    height: 135vh;
+  }
+
+  @media only screen and (max-width: $bp-smallest1) {
+    height: 145vh;
+  }
+
   &__description {
     width: 50%;
     padding: 7rem;
     color: white;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 65%;
+      padding: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      width: 75%;
+      padding: 2rem;
+    }
 
     &-paragraph {
       font-size: 1.5rem;
@@ -63,6 +85,15 @@
       padding: 3rem;
     }
 
+    @media only screen and (max-width: $bp-smaller) {
+      width: 74%;
+    }
+
+    @media only screen and (max-width: $bp-smaller2) {
+      width: 40rem;
+      padding: 2rem;
+    }
+
     &-input {
       height: 10rem;
       width: 45rem;
@@ -76,6 +107,16 @@
 
       @media only screen and (max-width: $bp-large) {
         height: 5rem;
+      }
+
+      @media only screen and (max-width: $bp-smaller3) {
+        width: 25rem;
+        margin: 1.5rem auto;
+      }
+
+      @media only screen and (max-width: $bp-smallest1) {
+        width: 30rem;
+        padding: 0 2.5rem;
       }
     }
 
@@ -94,6 +135,11 @@
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+
+      @media only screen and (max-width: $bp-smallest1) {
+        font-size: 1.2rem;
+        margin-left: 4rem;
+      }
     }
 
     &-checkbox1 input {
@@ -113,6 +159,10 @@
       background-color: #eee;
       z-index: 10;
       border-radius: 100rem;
+
+      @media only screen and (max-width: $bp-smallest1) {
+        left: 1rem;
+      }
     }
 
     &-checkbox1:hover input ~ .checkmark {
@@ -149,6 +199,7 @@
 
 #btn-width {
   width: 30%;
+  margin: 0 auto;
 
   @media only screen and (max-width: $bp-large) {
     width: 40%;

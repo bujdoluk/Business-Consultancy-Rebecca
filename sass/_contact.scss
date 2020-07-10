@@ -12,6 +12,22 @@
     grid-template-rows: repeat(2, 1fr);
   }
 
+  @media only screen and (max-width: $bp-small) {
+    height: 120vh;
+  }
+
+  @media only screen and (max-width: $bp-smaller2) {
+    padding: 2rem 3rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 2rem 1.5rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest1) {
+    padding: 1.5rem 2rem;
+  }
+
   &__content {
     margin-top: 5rem;
     &-heading {
@@ -20,10 +36,26 @@
       @media only screen and (max-width: $bp-large) {
         margin-bottom: 0;
       }
+
+      @media only screen and (max-width: $bp-smaller) {
+        margin: 0 auto;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        padding: 0 2rem;
+      }
+
+      @media only screen and (max-width: $bp-smallest1) {
+        padding: 0 2rem;
+      }
     }
 
     &-paragraph {
       font-size: 1.5rem;
+
+      @media only screen and (max-width: $bp-smallest1) {
+        padding: 0 4rem;
+      }
     }
 
     &-location {
@@ -33,6 +65,10 @@
 
       @media only screen and (max-width: $bp-large) {
         margin: 0;
+      }
+
+      @media only screen and (max-width: $bp-smallest1) {
+        padding: 0 4rem;
       }
     }
 
@@ -44,12 +80,16 @@
       @media only screen and (max-width: $bp-large) {
         margin: 0;
       }
+
+      @media only screen and (max-width: $bp-smallest1) {
+        padding: 0 4rem;
+      }
     }
   }
 
   &__form {
     border: none;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
     padding-right: 4rem;
 
     display: flex;
@@ -69,6 +109,22 @@
 
       @media only screen and (max-width: $bp-large) {
         width: 60rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        width: 47rem;
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+        width: 38rem;
+      }
+
+      @media only screen and (max-width: $bp-smaller2) {
+        width: 30rem;
+      }
+
+      @media only screen and (max-width: $bp-smallest1) {
+        width: 32rem;
       }
     }
 

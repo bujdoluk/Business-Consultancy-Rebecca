@@ -14,6 +14,12 @@ $font-primary: "Nunito", sans-serif;
 $bp-largest: 71.8rem; // 1150 px
 $bp-large: 61.25rem; // 980 px
 $bp-medium: 53.125rem; // 850 px
+$bp-small: 45rem; // 720 px
+$bp-smaller: 35.625rem; // 570 px
+$bp-smaller2: 31.1rem; // 497 px
+$bp-smaller3: 25rem; // 400 px
+$bp-smallest: 23.625rem; // 378 px
+$bp-smallest1: 22.5rem; // 360 px
 
 // HEADINGS
 
@@ -24,22 +30,52 @@ $bp-medium: 53.125rem; // 850 px
   @media only screen and (max-width: $bp-large) {
     font-size: 4rem;
   }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-smaller2) {
+    font-size: 2.3rem;
+    padding: 0 3rem;
+  }
+
+  @media only screen and (max-width: $bp-smaller3) {
+    font-size: 2rem;
+  }
 }
 
 .heading-2 {
   font-size: 3rem;
   text-align: center;
+  padding: 0 2rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2.2rem;
+  }
+
+  @media only screen and (max-width: $bp-smaller3) {
+    font-size: 1.85rem;
+  }
 }
 
 .heading-3 {
   font-size: 2rem;
   text-align: center;
+
+  @media only screen and (max-width: $bp-smaller3) {
+    font-size: 1.65rem;
+  }
 }
 
 .heading-4 {
   font-size: 1.7rem;
   text-align: center;
   color: rgb(255, 58, 189);
+
+  @media only screen and (max-width: $bp-smaller3) {
+    font-size: 2rem;
+  }
 }
 
 .heading-5 {
@@ -61,6 +97,11 @@ $bp-medium: 53.125rem; // 850 px
   background-color: $color-primary-light;
   display: inline-block;
   margin: 0.4rem 0;
+
+  @media only screen and (max-width: $bp-smaller2) {
+    font-size: 1.6rem;
+    padding: 1.2rem 2.6rem;
+  }
 }
 
 .btn-pink:hover,
@@ -82,6 +123,11 @@ $bp-medium: 53.125rem; // 850 px
   color: $color-primary-light;
   background-color: white;
   display: inline-block;
+
+  @media only screen and (max-width: $bp-smaller2) {
+    font-size: 1.6rem;
+    padding: 1.2rem 2.6rem;
+  }
 }
 
 .btn-white:hover,
@@ -103,6 +149,11 @@ $bp-medium: 53.125rem; // 850 px
   color: rgb(100, 100, 100);
   background-color: rgb(219, 212, 212);
   display: inline-block;
+
+  @media only screen and (max-width: $bp-smaller2) {
+    font-size: 1.6rem;
+    padding: 1.2rem 2.6rem;
+  }
 }
 
 // to-top button
@@ -148,6 +199,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  overflow-x: hidden;
 }
 
 body {
