@@ -10,18 +10,28 @@
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "build-sass": "node-sass sass/main.scss main.css",
+    "build-js": "browserify script.js -t [ babelify --presets [ env ] ] | uglifyjs -c -m > bundle.js",
+    "build": "npm run build-sass && npm run build-js"
   },
   "author": "Lukas",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@netlify/plugin-sitemap": "^0.1.0",
     "autoprefixer": "^9.8.4",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.1",
     "concat": "^1.0.3",
     "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.1"
+    "postcss-cli": "^7.1.1",
+    "uglify": "^0.1.5"
   },
   "dependencies": {
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "@11ty/eleventy": "^0.10.0",
+    "html-minifier": "^4.0.0"
   }
 }
